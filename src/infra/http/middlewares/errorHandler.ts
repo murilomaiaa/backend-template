@@ -1,4 +1,4 @@
-import AppError from 'src/main/errors/AppError';
+import AppError from '@/main/errors/AppError';
 import { NextFunction, Request, Response } from 'express';
 import { isCelebrateError } from 'celebrate';
 

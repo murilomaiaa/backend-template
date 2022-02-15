@@ -1,6 +1,6 @@
 import express, { Express } from 'express';
 import request from 'supertest';
-import { paginate } from 'src/infra/http/middlewares';
+import { paginate } from '@/infra/http/middlewares';
 
 describe('paginate', () => {
   let server: Express;
