@@ -7,7 +7,7 @@ import AppError from 'src/main/errors/AppError';
 
 const redisClient = new Redis({
   host: cache.config.redis.host,
-  port: cache.config.redis.port,
+  port: cache.config.redis.port ? Number(cache.config.redis.port) : undefined,
   password: cache.config.redis.password || undefined,
 });
 
