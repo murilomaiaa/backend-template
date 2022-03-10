@@ -24,6 +24,8 @@ export class TypeormHelper {
       type: 'postgres',
       entities: [`${process.env.TS_NODE_DEV === undefined ? 'dist' : 'src'}/infra/typeorm/entities/index.{js,ts}`],
     });
+
+    await this.connection.runMigrations();
   }
 
   private async getMigrations() {
