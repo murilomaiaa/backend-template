@@ -1,7 +1,7 @@
 {
-  "name": "controle-de-membros",
+  "name": "backend-template",
   "version": "0.0.1",
-  "main": "dist/infra/http/server.js",
+  "main": "dist/main/api/index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
@@ -46,13 +46,13 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "celebrate": "^15.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-async-errors": "^3.1.1",
     "helmet": "^5.0.2",
     "ioredis": "^4.28.2",
-    "pg": "^8.7.1",
+    "joi": "^17.6.0",
+    "pg": "^8.7.3",
     "rate-limiter-flexible": "^2.3.6",
     "redis": "^4.0.1",
     "reflect-metadata": "^0.1.13",

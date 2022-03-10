@@ -5,9 +5,9 @@
   "username": "user",
   "password": "password",
   "database": "database",
-  "entities": ["./src/modules/**/entities/*.ts"],
-  "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+  "entities": ["./src/infra/typeorm/models/*.ts"],
+  "migrations": ["./src/infra/typeorm/migrations/*.ts"],
   "cli": {
-    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    "migrationsDir": "./src/infra/typeorm/migrations"
   }
 }
